@@ -21,110 +21,127 @@ namespace Calculator
 
         private void number_1_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("1");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("1");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_2_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("2");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("2");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_3_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("3");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("3");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_4_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("4");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("4");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_5_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("5");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("5");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_6_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("6");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("6");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_7_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("7");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("7");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_8_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("8");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("8");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_9_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("9");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("9");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_0_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber("0");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber("0");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void number_decimal_Click(object sender, EventArgs e)
         {
-            equation.AssignNumber(".");
-            label1_a.Text = equation.firstNumber;
-            label2_a.Text = equation.secondNumber;
+            equation.buildNumber(".");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
         }
 
         private void operator_equals_Click(object sender, EventArgs e)
         {
             equation.Equals();
-            label4_a.Text = Convert.ToString(equation.result);
-            equation.Continue();
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
         }
 
         private void operator_divide_Click(object sender, EventArgs e)
-        {
-            equation.operand = "/";
-            label3_a.Text = "/";
+        {                       
+            equation.Operand("/");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
         }
 
         private void operator_multiply_Click(object sender, EventArgs e)
-        {
-            equation.operand = "*";
-            label3_a.Text = "*";
+        {            
+            equation.Operand("*");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
         }
 
         private void operator_plus_Click(object sender, EventArgs e)
-        {
-            equation.operand = "+";
-            label3_a.Text = "+";
+        {            
+            equation.Operand("+");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
         }
 
         private void operator_minus_Click(object sender, EventArgs e)
+        {            
+            equation.Operand("-");
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
+        }
+
+        private void button_clear_Click(object sender, EventArgs e)
         {
-            equation.operand = "-";
-            label3_a.Text = "-";
+            equation.Clear();
+            label1_a.Text = equation.number;
+            label2_a.Text = equation.total;
+            label3_a.Text = equation.operand;
         }
     }
 }

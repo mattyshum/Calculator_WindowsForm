@@ -8,59 +8,66 @@ namespace Calculator
 {
     class Equation
     {
-        public Equation()
-        {
 
-        }
+        public string number { get; set; }
 
-        public string firstNumber { get; set; }
-        public string secondNumber { get; set; }
+        public double numberNum;
+        public string total { get; set; }
+
+        public double totalNum;
         public string operand { get; set; }
-        public double result { get; set; }
-
-        private double firstNum = 0;
-        private double secondNum = 0;
-
-        public void AssignNumber(string number)
+  
+        public void buildNumber(string digit)
         {
-            if (operand == null)
-            {
-                firstNumber += number;
-            }
-            else
-            {
-                secondNumber += number;
-            }
+            number += digit;
         }
 
-        public double Equals()
+        public void Operand(string operand)
         {
-            firstNum = Convert.ToDouble(firstNumber);
-            secondNum = Convert.ToDouble(secondNumber);
+            this.operand = operand;
+
+            if (total == null)
+            {
+                total = number;
+                number = null;
+            }
+            else if (number != null)
+            {
+                Equals();
+            }
+        }
+        public void Equals()
+        {
+            numberNum = Convert.ToDouble(number);
+            totalNum = Convert.ToDouble(total);
             switch (operand)
             {
                 case "+":
-                    result = firstNum + secondNum;
+                    totalNum += numberNum;
                     break;
                 case "-":
-                    result = firstNum - secondNum;
+                    totalNum -= numberNum;
                     break;
                 case "*":
-                    result = firstNum * secondNum;
+                    totalNum *= numberNum;
                     break;
                 case "/":
-                    result = firstNum / secondNum;
+                    totalNum /= numberNum;
                     break;
             }
-            return result;
+
+            number = null;
+            total = Convert.ToString(totalNum);
         }
 
-        public void Continue()
+        public void Clear()
         {
-            firstNumber = Convert.ToString(result);
-            secondNumber = null;
+            number = null;
+            total = null;
+            operand = null;
+            numberNum = 0;
+            totalNum = 0;
         }
-
-
+        
     }
 }

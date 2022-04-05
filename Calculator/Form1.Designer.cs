@@ -51,15 +51,15 @@ namespace Calculator
             this.label2_a = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label3_a = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label4_a = new System.Windows.Forms.Label();
+            this.button_clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_1
             // 
-            this.number_1.Location = new System.Drawing.Point(240, 250);
+            this.number_1.Location = new System.Drawing.Point(140, 125);
+            this.number_1.Margin = new System.Windows.Forms.Padding(2);
             this.number_1.Name = "number_1";
-            this.number_1.Size = new System.Drawing.Size(72, 64);
+            this.number_1.Size = new System.Drawing.Size(42, 32);
             this.number_1.TabIndex = 0;
             this.number_1.Text = "1";
             this.number_1.UseVisualStyleBackColor = true;
@@ -67,9 +67,10 @@ namespace Calculator
             // 
             // number_2
             // 
-            this.number_2.Location = new System.Drawing.Point(348, 250);
+            this.number_2.Location = new System.Drawing.Point(203, 125);
+            this.number_2.Margin = new System.Windows.Forms.Padding(2);
             this.number_2.Name = "number_2";
-            this.number_2.Size = new System.Drawing.Size(72, 64);
+            this.number_2.Size = new System.Drawing.Size(42, 32);
             this.number_2.TabIndex = 1;
             this.number_2.Text = "2";
             this.number_2.UseVisualStyleBackColor = true;
@@ -77,9 +78,10 @@ namespace Calculator
             // 
             // number_3
             // 
-            this.number_3.Location = new System.Drawing.Point(456, 250);
+            this.number_3.Location = new System.Drawing.Point(266, 125);
+            this.number_3.Margin = new System.Windows.Forms.Padding(2);
             this.number_3.Name = "number_3";
-            this.number_3.Size = new System.Drawing.Size(72, 64);
+            this.number_3.Size = new System.Drawing.Size(42, 32);
             this.number_3.TabIndex = 2;
             this.number_3.Text = "3";
             this.number_3.UseVisualStyleBackColor = true;
@@ -87,9 +89,10 @@ namespace Calculator
             // 
             // number_4
             // 
-            this.number_4.Location = new System.Drawing.Point(240, 163);
+            this.number_4.Location = new System.Drawing.Point(140, 82);
+            this.number_4.Margin = new System.Windows.Forms.Padding(2);
             this.number_4.Name = "number_4";
-            this.number_4.Size = new System.Drawing.Size(72, 64);
+            this.number_4.Size = new System.Drawing.Size(42, 32);
             this.number_4.TabIndex = 3;
             this.number_4.Text = "4";
             this.number_4.UseVisualStyleBackColor = true;
@@ -97,9 +100,10 @@ namespace Calculator
             // 
             // number_5
             // 
-            this.number_5.Location = new System.Drawing.Point(348, 163);
+            this.number_5.Location = new System.Drawing.Point(203, 82);
+            this.number_5.Margin = new System.Windows.Forms.Padding(2);
             this.number_5.Name = "number_5";
-            this.number_5.Size = new System.Drawing.Size(72, 64);
+            this.number_5.Size = new System.Drawing.Size(42, 32);
             this.number_5.TabIndex = 4;
             this.number_5.Text = "5";
             this.number_5.UseVisualStyleBackColor = true;
@@ -107,9 +111,10 @@ namespace Calculator
             // 
             // number_6
             // 
-            this.number_6.Location = new System.Drawing.Point(456, 163);
+            this.number_6.Location = new System.Drawing.Point(266, 82);
+            this.number_6.Margin = new System.Windows.Forms.Padding(2);
             this.number_6.Name = "number_6";
-            this.number_6.Size = new System.Drawing.Size(72, 64);
+            this.number_6.Size = new System.Drawing.Size(42, 32);
             this.number_6.TabIndex = 5;
             this.number_6.Text = "6";
             this.number_6.UseVisualStyleBackColor = true;
@@ -117,9 +122,10 @@ namespace Calculator
             // 
             // number_7
             // 
-            this.number_7.Location = new System.Drawing.Point(240, 80);
+            this.number_7.Location = new System.Drawing.Point(140, 40);
+            this.number_7.Margin = new System.Windows.Forms.Padding(2);
             this.number_7.Name = "number_7";
-            this.number_7.Size = new System.Drawing.Size(72, 64);
+            this.number_7.Size = new System.Drawing.Size(42, 32);
             this.number_7.TabIndex = 6;
             this.number_7.Text = "7";
             this.number_7.UseVisualStyleBackColor = true;
@@ -127,9 +133,10 @@ namespace Calculator
             // 
             // number_8
             // 
-            this.number_8.Location = new System.Drawing.Point(348, 80);
+            this.number_8.Location = new System.Drawing.Point(203, 40);
+            this.number_8.Margin = new System.Windows.Forms.Padding(2);
             this.number_8.Name = "number_8";
-            this.number_8.Size = new System.Drawing.Size(72, 64);
+            this.number_8.Size = new System.Drawing.Size(42, 32);
             this.number_8.TabIndex = 7;
             this.number_8.Text = "8";
             this.number_8.UseVisualStyleBackColor = true;
@@ -137,9 +144,10 @@ namespace Calculator
             // 
             // number_0
             // 
-            this.number_0.Location = new System.Drawing.Point(240, 337);
+            this.number_0.Location = new System.Drawing.Point(140, 168);
+            this.number_0.Margin = new System.Windows.Forms.Padding(2);
             this.number_0.Name = "number_0";
-            this.number_0.Size = new System.Drawing.Size(72, 64);
+            this.number_0.Size = new System.Drawing.Size(42, 32);
             this.number_0.TabIndex = 9;
             this.number_0.Text = "0";
             this.number_0.UseVisualStyleBackColor = true;
@@ -147,9 +155,10 @@ namespace Calculator
             // 
             // number_9
             // 
-            this.number_9.Location = new System.Drawing.Point(456, 80);
+            this.number_9.Location = new System.Drawing.Point(266, 40);
+            this.number_9.Margin = new System.Windows.Forms.Padding(2);
             this.number_9.Name = "number_9";
-            this.number_9.Size = new System.Drawing.Size(72, 64);
+            this.number_9.Size = new System.Drawing.Size(42, 32);
             this.number_9.TabIndex = 8;
             this.number_9.Text = "9";
             this.number_9.UseVisualStyleBackColor = true;
@@ -157,9 +166,10 @@ namespace Calculator
             // 
             // operator_divide
             // 
-            this.operator_divide.Location = new System.Drawing.Point(567, 80);
+            this.operator_divide.Location = new System.Drawing.Point(331, 40);
+            this.operator_divide.Margin = new System.Windows.Forms.Padding(2);
             this.operator_divide.Name = "operator_divide";
-            this.operator_divide.Size = new System.Drawing.Size(72, 64);
+            this.operator_divide.Size = new System.Drawing.Size(42, 32);
             this.operator_divide.TabIndex = 11;
             this.operator_divide.Text = "/";
             this.operator_divide.UseVisualStyleBackColor = true;
@@ -167,9 +177,10 @@ namespace Calculator
             // 
             // operator_multiply
             // 
-            this.operator_multiply.Location = new System.Drawing.Point(567, 163);
+            this.operator_multiply.Location = new System.Drawing.Point(331, 82);
+            this.operator_multiply.Margin = new System.Windows.Forms.Padding(2);
             this.operator_multiply.Name = "operator_multiply";
-            this.operator_multiply.Size = new System.Drawing.Size(72, 64);
+            this.operator_multiply.Size = new System.Drawing.Size(42, 32);
             this.operator_multiply.TabIndex = 12;
             this.operator_multiply.Text = "*";
             this.operator_multiply.UseVisualStyleBackColor = true;
@@ -177,9 +188,10 @@ namespace Calculator
             // 
             // operator_plus
             // 
-            this.operator_plus.Location = new System.Drawing.Point(567, 250);
+            this.operator_plus.Location = new System.Drawing.Point(331, 125);
+            this.operator_plus.Margin = new System.Windows.Forms.Padding(2);
             this.operator_plus.Name = "operator_plus";
-            this.operator_plus.Size = new System.Drawing.Size(72, 64);
+            this.operator_plus.Size = new System.Drawing.Size(42, 32);
             this.operator_plus.TabIndex = 13;
             this.operator_plus.Text = "+";
             this.operator_plus.UseVisualStyleBackColor = true;
@@ -187,9 +199,10 @@ namespace Calculator
             // 
             // operator_minus
             // 
-            this.operator_minus.Location = new System.Drawing.Point(567, 337);
+            this.operator_minus.Location = new System.Drawing.Point(331, 168);
+            this.operator_minus.Margin = new System.Windows.Forms.Padding(2);
             this.operator_minus.Name = "operator_minus";
-            this.operator_minus.Size = new System.Drawing.Size(72, 64);
+            this.operator_minus.Size = new System.Drawing.Size(42, 32);
             this.operator_minus.TabIndex = 14;
             this.operator_minus.Text = "-";
             this.operator_minus.UseVisualStyleBackColor = true;
@@ -197,9 +210,10 @@ namespace Calculator
             // 
             // number_decimal
             // 
-            this.number_decimal.Location = new System.Drawing.Point(348, 337);
+            this.number_decimal.Location = new System.Drawing.Point(203, 168);
+            this.number_decimal.Margin = new System.Windows.Forms.Padding(2);
             this.number_decimal.Name = "number_decimal";
-            this.number_decimal.Size = new System.Drawing.Size(72, 64);
+            this.number_decimal.Size = new System.Drawing.Size(42, 32);
             this.number_decimal.TabIndex = 15;
             this.number_decimal.Text = ".";
             this.number_decimal.UseVisualStyleBackColor = true;
@@ -207,9 +221,10 @@ namespace Calculator
             // 
             // operator_equals
             // 
-            this.operator_equals.Location = new System.Drawing.Point(456, 337);
+            this.operator_equals.Location = new System.Drawing.Point(266, 168);
+            this.operator_equals.Margin = new System.Windows.Forms.Padding(2);
             this.operator_equals.Name = "operator_equals";
-            this.operator_equals.Size = new System.Drawing.Size(72, 64);
+            this.operator_equals.Size = new System.Drawing.Size(42, 32);
             this.operator_equals.TabIndex = 16;
             this.operator_equals.Text = "=";
             this.operator_equals.UseVisualStyleBackColor = true;
@@ -218,82 +233,83 @@ namespace Calculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 89);
+            this.label1.Location = new System.Drawing.Point(31, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 30);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 17;
-            this.label1.Text = "First Number";
+            this.label1.Text = "Number";
             // 
             // label1_a
             // 
             this.label1_a.AutoSize = true;
-            this.label1_a.Location = new System.Drawing.Point(72, 140);
+            this.label1_a.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1_a.Location = new System.Drawing.Point(42, 70);
+            this.label1_a.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1_a.Name = "label1_a";
-            this.label1_a.Size = new System.Drawing.Size(30, 30);
+            this.label1_a.Size = new System.Drawing.Size(12, 17);
             this.label1_a.TabIndex = 18;
-            this.label1_a.Text = "hi";
+            this.label1_a.Text = " ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 191);
+            this.label2.Location = new System.Drawing.Point(31, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 30);
+            this.label2.Size = new System.Drawing.Size(32, 15);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Second Number";
+            this.label2.Text = "Total";
             // 
             // label2_a
             // 
             this.label2_a.AutoSize = true;
-            this.label2_a.Location = new System.Drawing.Point(72, 242);
+            this.label2_a.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2_a.Location = new System.Drawing.Point(42, 121);
+            this.label2_a.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2_a.Name = "label2_a";
-            this.label2_a.Size = new System.Drawing.Size(46, 30);
+            this.label2_a.Size = new System.Drawing.Size(12, 17);
             this.label2_a.TabIndex = 20;
-            this.label2_a.Text = "bye";
+            this.label2_a.Text = " ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 293);
+            this.label3.Location = new System.Drawing.Point(31, 146);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 30);
+            this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 21;
             this.label3.Text = "Operand";
             // 
             // label3_a
             // 
             this.label3_a.AutoSize = true;
-            this.label3_a.Location = new System.Drawing.Point(72, 344);
+            this.label3_a.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3_a.Location = new System.Drawing.Point(42, 172);
+            this.label3_a.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3_a.Name = "label3_a";
-            this.label3_a.Size = new System.Drawing.Size(71, 30);
+            this.label3_a.Size = new System.Drawing.Size(12, 17);
             this.label3_a.TabIndex = 22;
-            this.label3_a.Text = "thingy";
+            this.label3_a.Text = " ";
             // 
-            // label4
+            // button_clear
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(669, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 30);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Result";
-            // 
-            // label4_a
-            // 
-            this.label4_a.AutoSize = true;
-            this.label4_a.Location = new System.Drawing.Point(669, 140);
-            this.label4_a.Name = "label4_a";
-            this.label4_a.Size = new System.Drawing.Size(24, 30);
-            this.label4_a.TabIndex = 24;
-            this.label4_a.Text = "0";
+            this.button_clear.Location = new System.Drawing.Point(399, 40);
+            this.button_clear.Margin = new System.Windows.Forms.Padding(2);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(42, 32);
+            this.button_clear.TabIndex = 23;
+            this.button_clear.Text = "Clear";
+            this.button_clear.UseVisualStyleBackColor = true;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4_a);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(467, 225);
+            this.Controls.Add(this.button_clear);
             this.Controls.Add(this.label3_a);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2_a);
@@ -316,6 +332,7 @@ namespace Calculator
             this.Controls.Add(this.number_3);
             this.Controls.Add(this.number_2);
             this.Controls.Add(this.number_1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -347,8 +364,7 @@ namespace Calculator
         private System.Windows.Forms.Label label2_a;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label3_a;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label4_a;
+        private System.Windows.Forms.Button button_clear;
     }
 }
 
